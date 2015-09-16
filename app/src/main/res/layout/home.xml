@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.cnwir.gongxin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color"
+        android:orientation="horizontal" >
+
+        <com.cnwir.gongxin.view.CircleImageView
+            android:id="@+id/home_iv_menu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="@null"
+            android:padding="8dp"
+            android:src="@drawable/menu_icon" />
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white_color"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/home_iv_search"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:contentDescription="@null"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+
+    <!--
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+    -->
+
+    <com.cnwir.gongxin.view.viewpager.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+       android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.cnwir.gongxin.view.viewpager.CustomViewPager>
+
+    <ImageView
+        android:id="@+id/arc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_cloud_master_bg" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal" 
+        
+        android:layout_gravity="bottom"
+        >
+
+        <RadioButton
+            android:id="@+id/home_rb_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bottom_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab1_icon_sel"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/tab_one_text"
+            android:textColor="@color/tab_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/home_rb_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bottom_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab2_icon_sel"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/tab_two_text"
+            android:textColor="@color/tab_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/home_rb_clouddesktop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bottom_bg"
+            android:button="@null"
+            android:drawableBottom="@drawable/tabbar_clouddesktop"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:text="  "
+            android:textColor="@color/tab_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/home_rb_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bottom_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab3_icon_sel"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/tab_three_text"
+            android:textColor="@color/tab_text_color"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/home_rb_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/tab_bottom_bg"
+            android:button="@null"
+            android:drawableTop="@drawable/tab4_icon_sel"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="@string/tab_four_text"
+            android:textColor="@color/tab_text_color"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</LinearLayout>

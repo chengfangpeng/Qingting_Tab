@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color" >
+
+        <ImageView
+            android:id="@+id/iv_create_return"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/return_icon" />
+
+        <TextView
+            android:id="@+id/create_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="创建应用"
+            android:textColor="@color/white_color"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_create_finish"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="@string/finish"
+            android:textColor="@color/white_color"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入网址"
+            android:textColor="@color/black_color"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/create_edit_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="http://"
+            android:textColor="@color/black_color"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/create_edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="标题"
+            android:textColor="@color/black_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

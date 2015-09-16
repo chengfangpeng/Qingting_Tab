@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/model_top_title_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        
+        <TextView 
+            android:id="@+id/cate_module_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/model_top_title_text_color"
+            android:textSize="@dimen/model_top_title_text_size"/>
+        
+        <TextView 
+            android:id="@+id/cate_module_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/look_all"
+            android:textColor="@color/main_color"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="12sp"/>
+        
+    </LinearLayout>
+    
+   <!--  <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"/> -->
+    
+    <GridView
+        android:id="@+id/cate_module_gv"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:numColumns="4"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="0dp"
+        android:padding="6dp"></GridView>
+    
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/main_color" >
+
+        <ImageView
+            android:id="@+id/iv_collect_return"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_return_icon" />
+
+        <TextView
+            android:id="@+id/collect_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_collect"
+            android:textColor="@color/white_color"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <com.cnwir.gongxin.view.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+        <com.cnwir.gongxin.view.expandablelistview.PullableListView
+            android:id="@+id/eListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:scrollbars="none"
+            android:dividerHeight="0dp" >
+        </com.cnwir.gongxin.view.expandablelistview.PullableListView>
+
+        <include layout="@layout/load_more" />
+
+        <include layout="@layout/loaded_all" />
+    </com.cnwir.gongxin.view.PullToRefreshLayout>
+
+</LinearLayout>

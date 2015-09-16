@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnwir.gongxin.view.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mingzhan"
+    android:layout_width="match_parent"
+    android:background="#f5f5f5"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/refresh_head" />
+
+    <com.cnwir.gongxin.view.PullableScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/one_ming_zhan_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/one_all_layout_padding" >
+        </LinearLayout>
+    </com.cnwir.gongxin.view.PullableScrollView>
+
+    <include layout="@layout/load_more" />
+
+    <include layout="@layout/loaded_all" />
+
+</com.cnwir.gongxin.view.PullToRefreshLayout>

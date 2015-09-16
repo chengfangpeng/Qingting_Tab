@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources >
+    
+    <color name="black_color">#000000</color>
+    <color name="white_color">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="main_color">#2B2CFF</color>
+    <color name="tab_normal_color">#545454</color>
+     <color name="tab_text_selected_color">#acacac</color>
+    
+    
+    <color name="model_top_title_text_color">#444444</color>
+    <color name="one_bg_color">#f5f5f5</color>
+    <color name="gray">#c7c7c7</color>
+    
+    <color name="tab_bottom_bg">#F4F4F4</color>
+    
+    <color name="comment_btn_bg">#FD9601</color>
+    
+    <color name="gray_black">#B2B2B2</color>
+    
+    <color name="transparent_white">#30ffffff</color>
+    
+</resources>

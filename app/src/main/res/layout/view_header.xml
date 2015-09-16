@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d8d9da" />
+
+    <LinearLayout
+        android:id="@+id/header_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/line"
+        android:paddingLeft="8dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="@style/myRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.5"                 
+                />
+            
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#606060"
+                android:textSize="12sp" />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+            <Button 
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/blue_box"
+                    android:text="@string/add_text"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/main_color"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    />
+            
+            <TextView 
+                android:id="@+id/tv_share_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginTop="2dp"
+                android:textColor="@color/main_color"
+                android:textSize="13sp"/>
+            
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/btn_pull_down"
+            android:contentDescription="@null"
+            android:layout_marginLeft="5dp"
+            android:focusable="false"
+             />
+        
+    </LinearLayout>
+
+</RelativeLayout>

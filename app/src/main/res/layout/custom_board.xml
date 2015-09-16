@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A0000000"
+    
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    >
+
+    
+
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+      >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/wechat"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/umeng_socialize_wechat" />
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/wechat"
+                android:text="@string/wechat_friend"
+                 android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/wechat_circle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_socialize_wxcircle"
+                
+                android:layout_centerInParent="true" />
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/wechat_circle"
+                android:text="@string/wechat_moments"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/qq"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_socialize_qq_on"
+                android:layout_centerInParent="true" />
+            
+               <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/qq"
+                android:text="@string/qq_friend"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/qzone"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_socialize_qzone_on"
+                android:layout_centerInParent="true" />
+               <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/qzone"
+                android:text="@string/qq_zone"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+    </LinearLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+     
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+      >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+
+            <ImageButton
+                android:id="@+id/sina_weibo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/umeng_socialize_sina_on" />
+               <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/sina_weibo"
+                android:text="@string/sina_weibo"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+
+       <!--  <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/tencent_weibo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_socialize_tx_on"
+                android:layout_centerInParent="true" />
+               <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/tencent_weibo"
+                android:text="@string/tencent_weibo"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/reren"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_socialize_renren_on"
+                android:layout_centerInParent="true" />
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/reren"
+                android:text="@string/renren"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/gmail"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/umeng_socialize_gmail_on"
+                android:layout_centerInParent="true" />
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/gmail"
+                android:text="@string/email"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout> -->
+    </LinearLayout>
+    
+    
+     
+     <!-- 
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+      >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            >
+
+            <ImageButton
+                android:id="@+id/sms"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/umeng_socialize_wechat_gray" />
+               <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/sms"
+                android:text="@string/sms"
+                android:layout_centerHorizontal="true"
+                 android:textColor="@color/white_color"
+                
+                />
+        </RelativeLayout>
+
+      
+    </LinearLayout> -->
+     
+
+</LinearLayout>

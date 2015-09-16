@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+            <com.cnwir.gongxin.view.ScaleProgress
+                android:id="@+id/mScaleProgress"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/cloud_desktop_transfer_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/white_box"
+                android:singleLine="true"
+                android:text="开启传送门"
+                android:textColor="@color/white_color"
+                android:textSize="14sp"
+                android:layout_marginBottom="50dp"
+                android:layout_alignBottom="@+id/mScaleProgress"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/transparent"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="存储空间："
+                android:textColor="@color/white_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/memorize_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="存储空间："
+                android:textColor="@color/white_color"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="看看哪些应用可以用云端启动"
+            android:textColor="@color/white_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="省内存"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="无需安装本地app，0内存占用"
+        android:textColor="@color/gray_black"
+        android:textSize="12sp" 
+        
+        />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px" 
+        android:background="@color/gray"
+        />
+     <TextView
+         android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="免更新"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="不用担心每周一次的频繁更新"
+        android:textColor="@color/gray_black"
+        android:textSize="12sp" 
+        
+        />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px" 
+        android:background="@color/gray"
+        />
+     <TextView
+         android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="轻盈体验"
+        android:textColor="@color/black_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="云端应用，服务器加载，体验就是轻"
+        android:textColor="@color/gray_black"
+        android:textSize="12sp" 
+        
+        />
+
+    <View
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px" 
+        android:background="@color/gray"
+        />
+
+</LinearLayout>

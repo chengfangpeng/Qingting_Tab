@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    
+        android:layout_width="match_parent"
+        android:background="@color/main_color"
+        android:layout_height="45dp">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white_color"
+            android:text="@string/manage_card"
+            android:textSize="16sp"/>
+        
+        <ImageView 
+            android:id="@+id/card_return"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:contentDescription="@null"
+            android:padding="10dp"
+            android:src="@drawable/search_return_icon"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:paddingRight="12dp"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_manage_text"
+            android:textColor="#444444"
+            android:textSize="14sp"/>
+        
+        <ImageView 
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:contentDescription="@null"
+            android:src="@drawable/drag_icon"
+            android:scaleType="fitCenter"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_manage_text1"
+            android:textColor="#444444"
+            android:textSize="14sp"/>
+        
+    </LinearLayout>
+
+    <com.cnwir.mobeta.android.deslv.DragSortListView
+        android:id="@+id/dragListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/transparent"
+        android:background="@color/white_color"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp" >
+    </com.cnwir.mobeta.android.deslv.DragSortListView>
+    
+</LinearLayout>

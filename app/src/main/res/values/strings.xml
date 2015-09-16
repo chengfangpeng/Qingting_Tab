@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜻蜓应用</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- <string name="app_host">Http://192.168.1.148:8080/GongXinApp/app</string> -->
+    <string name="app_host">http://www.qingting.org.cn/app</string>
+    <string name="tab_one_text">首页</string>
+    <string name="tab_two_text">分类</string>
+    <string name="tab_three_text">游戏</string>
+    <string name="tab_four_text">段子</string>
+    <string name="finish">完成</string>
+    <string name="submit">提交</string>
+
+    <!-- menu -->
+    <string name="my_collect">我的收藏</string>
+    <string name="my_create">我的创建</string>
+    <string name="feedback">意见反馈</string>
+    <string name="setting">设置</string>
+    <string name="login">登录</string>
+    <string name="exit_login">退出登录</string>
+    <string name="my_comment">评论</string>
+    <string name="bind_phone_num">绑定手机号</string>
+    <string name="about_us">关于我们</string>
+
+    <!-- home -->
+    <string name="one_1">名站</string>
+    <string name="one_2">精选</string>
+    <string name="one_3">人气</string>
+    <string name="one_4">工具</string>
+    <string name="look_all">查看全部</string>
+    <string name="open">打开</string>
+    <string name="collect">收藏</string>
+    <string name="detail">详情</string>
+    <string name="comment">评论</string>
+    <string name="share">分享</string>
+
+    <!-- 精选 -->
+    <string name="text_youliao">有料</string>
+    <string name="key_youliao">youliao</string>
+    <string name="text_youliao_desc">有料文章，资讯最前沿</string>
+    <string name="text_haibao">紫牛海报</string>
+    <string name="key_haibao">haibao</string>
+    <string name="text_haibao_desc">紫牛海报</string>
+    <string name="text_rebo">今日热播</string>
+    <string name="key_rebo">hotvideo</string>
+    <string name="text_rebo_desc">热播视频，世界真奇葩</string>
+    <string name="text_douniyixiao">逗你一笑</string>
+    <string name="key_douniyixiao">joke</string>
+    <string name="text_douniyixiao_desc">笑话频道，爆笑不停</string>
+    <string name="text_today_weather">今日天气</string>
+    <string name="text_today_weather_desc">关注天气，留心冷暖</string>
+    <string name="text_xiaoshuo_book">小说书架</string>
+    <string name="key_xiaoshuo_book">book</string>
+    <string name="text_xiaoshuo_book_desc">福利小说，虐心不断</string>
+    <string name="text_zhainan_fuli">宅男福利</string>
+    <string name="key_zhainan_fuli">ladyimg</string>
+    <string name="text_zhainan_fuli_desc">宅男频道，一饱眼福</string>
+    <string name="text_yulu">励志语录</string>
+    <string name="key_yulu">yulu</string>
+    <string name="text_yulu_desc">一句话语录</string>
+    <string name="manage_card">管理卡片</string>
+    <string name="card_manage_text">按住</string>
+    <string name="card_manage_text1">可拖拽卡片</string>
+    <string name="today_weather">今日天气：</string>
+    <string name="weather_pm">实时空气质量：</string>
+    <string name="weather_more_detail">查看更多天气详情</string>
+    <string name="weather_great">优</string>
+    <string name="weather_good">良</string>
+    <string name="weather_contaminate_mild">轻度污染</string>
+    <string name="weather_contaminate_serious">重度污染</string>
+    <string name="add_text">添加</string>
+    <string name="more_text">更多</string>
+    <string name="look_more_text">查看更多   ></string>
+    <string name="look_text">查看</string>
+
+    <!-- 登录 -->
+    <string name="login_select">选择以下方式登录</string>
+    <string name="login_byweixin">微信登录\t\t\t\t</string>
+    <string name="login_byweibo">新浪微博登录</string>
+    <string name="login_byqq">QQ账号登录\t\t</string>
+    <string name="login_return_text">返回\t\t\t\t\t\t\t</string>
+    <string name="login_first">请先登录</string>
+
+    <!-- 搜索 -->
+    <string name="search_text">搜索</string>
+    <string name="search_hint">搜索应用</string>
+    <string name="search_hot">热门搜索</string>
+    <string name="search_change">换一批</string>
+    <string name="search_change_one">换一个</string>
+    <string name="search_history">搜索历史</string>
+    <string name="search_history_null">暂无搜索记录！</string>
+    <string name="two_add_text">添加+</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_toast_obtain_code_success">获取 Code 成功</string>
+    <string name="weibosdk_demo_toast_obtain_code_failed">获取 Code 失败</string>
+    <string name="weibosdk_demo_toast_obtain_token_success">获取 Token 成功</string>
+    <string name="weibosdk_demo_toast_obtain_token_failed">获取 Token 失败</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新.....</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载.....</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_all_data">数据已加载全部</string>
+    <string name="net_error">当前网络不可用，请先连接Internet！</string>
+    <string name="network_bad">唉，今天的网络怎么这么差劲！</string>
+    <string name="network_b">网速真的不给力！</string>
+    <string name="network_no_good">网速好像不怎么给力啊！</string>
+    <string name="data_format_error">数据格式错误！</string>
+    <string name="accident_exit">发生了一点意外，程序终止！</string>
+
+    <!-- 分享平台名称 -->
+    <string name="wechat_friend">微信好友</string>
+    <string name="wechat_moments">朋友圈</string>
+    <string name="qq_friend">qq好友</string>
+    <string name="qq_zone">qq空间</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="tencent_weibo">腾讯微博</string>
+    <string name="renren">人人网</string>
+    <string name="email">邮箱</string>
+    <string name="sms">短信</string>
+    <string name="request_error">请求数据出错了</string>
+    <string name="title_activity_comment">CommentActivity</string>
+
+    <!-- 错误提示 -->
+    <string name="empty_error">输入不能为空</string>
+    <string name="format_error">输入格式有误</string>
+    <string name="create_error">创建失败</string>
+    <string name="update_error">修改失败</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+    <!-- 设置 -->
+    <string name="receive_push">接收推送消息</string>
+    <string name="cache_clear">清除缓存</string>
+    <string name="cache_clear_success">缓存清除成功</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="check_update">检测新版本</string>
+    <string name="change_theme">更换主题</string>
+
+    <!-- 搜索 -->
+    <string name="keyword_no_empty">关键字不能为空</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+
+    <!--关于我们-->
+    <string name="user_protocol">用户服务协议</string>
+
+
+</resources>

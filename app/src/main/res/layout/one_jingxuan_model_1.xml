@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/model_top_title_height"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+        
+        <TextView 
+            android:id="@+id/module_1_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/text_youliao"
+            android:textColor="@color/model_top_title_text_color"
+            android:textSize="@dimen/model_top_title_text_size"/>
+        
+        <TextView 
+            android:id="@+id/module_1_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/add_text"
+            android:textColor="@color/main_color"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="13sp"/>
+        <TextView 
+            android:id="@+id/module_1_more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/more_text"
+            android:textColor="@color/main_color"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textSize="13sp"/>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"/>
+    
+    <ListView 
+        android:id="@+id/module_1_lv"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        ></ListView>
+    
+    <!-- <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e7e7e7"/> -->
+    
+    <LinearLayout
+        android:id="@+id/module_1_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="28dp"
+        android:paddingRight="28dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/change_icon" />
+
+       <!--  <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_change"
+            android:textColor="@color/white_color"
+            android:textSize="14sp" /> -->
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ececec"/>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f5f5f5"/>
+
+</LinearLayout>

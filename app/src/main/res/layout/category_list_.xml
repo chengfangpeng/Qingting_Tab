@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cnwir.gongxin.view.PullToRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include layout="@layout/refresh_head" />
+    <!-- 支持所有实现Pullable接口的View -->
+
+    <com.cnwir.gongxin.view.expandablelistview.PullableListView
+        android:id="@+id/eListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:scrollbars="none"
+        android:dividerHeight="0dp" >
+    </com.cnwir.gongxin.view.expandablelistview.PullableListView>
+
+    <include layout="@layout/load_more" />
+
+    <include layout="@layout/loaded_all" />
+
+</com.cnwir.gongxin.view.PullToRefreshLayout>
+
