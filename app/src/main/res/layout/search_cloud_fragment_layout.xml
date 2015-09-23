@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_color"
+        android:background="?attr/maincolor"
         android:orientation="vertical" >
 
         <com.cnwir.gongxin.view.progressbar.RateTextCircularProgressBar
@@ -22,7 +22,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
-            android:text="正在匹配云端应用库" />
+            android:text="正在匹配云端应用库"
+            android:textColor="@color/white_color"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -35,6 +37,7 @@
                 android:padding="4dp"
                 android:text="app_package_name" 
                 android:background="@color/transparent_white"
+                android:textColor="@color/white_color"
                 />
 
             <TextView

@@ -45,7 +45,7 @@ public class RateTextCircularProgressBar extends FrameLayout implements OnProgre
 		this.addView(mRateText);
 		mRateText.setLayoutParams(lp);
 		mRateText.setGravity(Gravity.CENTER);
-		mRateText.setTextColor(Color.BLACK);
+		mRateText.setTextColor(Color.WHITE);
 		mRateText.setTextSize(20);
 		
 		mCircularProgressBar.setOnProgressChangeListener(this);

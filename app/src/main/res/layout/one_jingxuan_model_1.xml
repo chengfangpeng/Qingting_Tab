@@ -28,7 +28,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="@string/add_text"
-            android:textColor="@color/main_color"
+            android:textColor="?attr/maincolor"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:textSize="13sp"/>
@@ -38,7 +38,7 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical"
             android:text="@string/more_text"
-            android:textColor="@color/main_color"
+            android:textColor="?attr/maincolor"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:textSize="13sp"/>

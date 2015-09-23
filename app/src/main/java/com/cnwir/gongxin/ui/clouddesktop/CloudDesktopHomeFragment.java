@@ -41,11 +41,14 @@ public class CloudDesktopHomeFragment extends Fragment {
 
 	private int progress;
 
+	private TextView memorizeSpaceTv;
+
 	private Handler mHandler = new Handler() {
 
 		@Override
 		public void handleMessage(Message msg) {
 			mScaleProgress.setProgress(msg.what);
+
 
 			if (progress >= (int) (((float) Util.getRomUsedSize())
 					/ (float) Util.getRomTotalSize() * 100)) {
@@ -74,7 +77,7 @@ public class CloudDesktopHomeFragment extends Fragment {
 		mScaleProgress.setMax(100);
 		mScaleProgress.setTotalMemory(Util.getRomTotalSizeStr(mActivity));
 		mScaleProgress.setUsedMemory(Util.getUsedSizeStr(mActivity));
-
+		memorizeSpaceTv.setText(Util.getUsedSizeStr(mActivity) + "/" + Util.getRomTotalSizeStr(mActivity));
 		mHandler.sendEmptyMessageDelayed(0, 100);
 
 	}
@@ -95,6 +98,8 @@ public class CloudDesktopHomeFragment extends Fragment {
 
 			}
 		});
+		memorizeSpaceTv = (TextView) contentView.findViewById(R.id.memorize_space);
+
 
 	}
 

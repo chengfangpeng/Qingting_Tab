@@ -39,6 +39,10 @@ public class CloudAppSearchResultFragment extends Fragment {
 	
 	private TextView appProgressNum;
 
+	private TextView saveMemorizeSize, morePhotos, moreSongs;
+
+
+
 	/**
 	 * 扫描了app的数量
 	 */
@@ -70,7 +74,9 @@ public class CloudAppSearchResultFragment extends Fragment {
 		appScanCount = (TextView) contentView.findViewById(R.id.total_scan_tv);
 		appResultCount = (TextView) contentView.findViewById(R.id.result_app_count);
 		appProgressNum = (TextView) contentView.findViewById(R.id.app_progress_num);
-
+		saveMemorizeSize = (TextView) contentView.findViewById(R.id.save_memorize_size);
+		morePhotos = (TextView) contentView.findViewById(R.id.more_photos);
+		moreSongs = (TextView) contentView.findViewById(R.id.more_songs);
 		try {
 			if (!TextUtils.isEmpty(appJson)) {
 				Gson gson = new Gson();
@@ -87,6 +93,9 @@ public class CloudAppSearchResultFragment extends Fragment {
 				// 匹配到了多少应用
 				appResultCount.setText(datas.size() + "");
 				appProgressNum.setText(datas.size() + "款");
+				saveMemorizeSize.setText(Math.floor(datas.size() * 32.4) + "M");
+				moreSongs.setText(Math.floor(datas.size() * 32.4 / 3) + "首歌曲");
+				morePhotos.setText((int)(datas.size() * 32.4) + "张照片");
 				adapter = new CloudAppResultListViewAdapter(mActivity, datas);
 				mListView.setAdapter(adapter);
 

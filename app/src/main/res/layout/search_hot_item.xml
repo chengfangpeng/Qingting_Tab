@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text=""
-    android:textColor="@color/main_color"
+    android:textColor="?attr/maincolor"
     android:gravity="center"
     android:textSize="14sp"
     android:background="@drawable/search_hot_item_bg" >

@@ -40,7 +40,7 @@
             android:paddingRight="9dp"
             android:gravity="center"
             android:text="@string/look_text"
-            android:textColor="@color/main_color"
+            android:textColor="?attr/maincolor"
             android:textSize="16sp" />
     </LinearLayout>
 

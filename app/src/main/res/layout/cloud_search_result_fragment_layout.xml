@@ -7,7 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/main_color"
+        android:background="?attr/maincolor"
         android:orientation="vertical" >
 
         <TextView
@@ -17,7 +17,9 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="40dp"
-            android:text="共扫描了多少款应用" />
+            android:text="共扫描了多少款应用"
+            android:textColor="@color/white_color"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,7 +47,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
-                android:text="4"
+                android:text="0"
                 android:textColor="#FAA404"
                 android:textSize="20sp" />
 
@@ -58,6 +60,114 @@
                 android:text="款应用可以从云桌面启动"
                 android:textColor="@color/white_color"
                 android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="共可以为您节省"
+                android:textColor="@color/white_color"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:id="@+id/save_memorize_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="0M"
+                android:textColor="#FAA404"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="的空间"
+                android:textColor="@color/white_color"
+                android:textSize="16sp"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="可多拍"
+                android:textColor="@color/white_color"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:id="@+id/more_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="0张照片"
+                android:textColor="@color/white_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="可多听"
+                android:textColor="@color/white_color"
+                android:textSize="16sp" />
+            <TextView
+
+                android:id="@+id/more_songs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="0首歌曲"
+                android:textColor="@color/white_color"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
         <TextView
@@ -80,7 +190,9 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent_white"
                 android:padding="4dp"
-                android:text="app_package_name" />
+                android:text="app_package_name"
+                android:textColor="@color/white_color"
+                />
 
             <TextView
                 android:id="@+id/app_progress_num"
@@ -88,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:padding="4dp"
-                android:text="款"
+                android:text="0款"
                 android:textColor="#FAA404" />
         </RelativeLayout>
     </LinearLayout>
@@ -102,15 +214,4 @@
         android:transcriptMode="alwaysScroll" >
     </ListView>
 
-    <!-- <Button
-        android:id="@+id/cloud_app_search_finish"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:textSize="20sp" 
-        android:text="完成"
-        android:layout_gravity="bottom"
-        />
- -->
 </LinearLayout>

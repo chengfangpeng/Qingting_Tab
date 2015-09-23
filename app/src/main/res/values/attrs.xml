@@ -3,6 +3,8 @@
 
     <attr name="rightPadding" format="dimension" />
 
+    <attr name="maincolor" format="color"/>
+
     <declare-styleable name="SlidingMenu">
         <attr name="rightPadding" />
     </declare-styleable>
@@ -40,5 +42,7 @@
         <attr name="border_width" format="dimension" />
         <attr name="border_color" format="color" />
     </declare-styleable>
+
+
 
 </resources>

@@ -88,7 +88,7 @@ public class SearchResultActivity extends BaseActivity implements OnClickListene
 
 		adapter = new ExpandbleListViewAdapter(SearchResultActivity.this, datas, null);
 
-		listview.setAdapter(new SlideExpandableListAdapter(adapter, R.id.expandable_toggle_button, R.id.expandable));
+		listview.setAdapter(adapter);
 
 	}
 

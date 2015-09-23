@@ -87,7 +87,7 @@
                     android:background="@drawable/blue_box"
                     android:text="@string/add_text"
                     android:layout_marginTop="6dp"
-                    android:textColor="@color/main_color"
+                    android:textColor="?attr/maincolor"
                     android:textSize="14sp"
                     android:focusable="false"
                     />
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:text=""
                 android:layout_marginTop="2dp"
-                android:textColor="@color/main_color"
+                android:textColor="?attr/maincolor"
                 android:textSize="13sp"/>
             
         </LinearLayout>

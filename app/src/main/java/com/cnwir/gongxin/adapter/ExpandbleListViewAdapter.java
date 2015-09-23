@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -105,6 +106,8 @@ public class ExpandbleListViewAdapter extends BaseAdapter {
 			holder.title = (TextView) convertView.findViewById(R.id.title);
 			holder.desc = (TextView) convertView.findViewById(R.id.desc);
 			holder.btn_add = (Button) convertView.findViewById(R.id.btn_add);
+			holder.toggleImageView = (ImageView) convertView.findViewById(R.id.expandable_toggle_button);
+			holder.expandable = (LinearLayout) convertView.findViewById(R.id.expandable);
 
 			holder.add = convertView.findViewById(R.id.add);
 			holder.iv_add = (ImageView) convertView.findViewById(R.id.iv_add);
@@ -166,6 +169,18 @@ public class ExpandbleListViewAdapter extends BaseAdapter {
 				((Activity) context).overridePendingTransition(
 						R.anim.slide_left_in, R.anim.slide_left_out);
 
+			}
+		});
+		holder.toggleImageView.setTag(holder.expandable);
+		holder.toggleImageView.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				LinearLayout expandable = (LinearLayout) v.getTag();
+				if(expandable.getVisibility() == View.GONE){
+					expandable.setVisibility(View.VISIBLE);
+				}else{
+					expandable.setVisibility(View.GONE);
+				}
 			}
 		});
 
@@ -272,6 +287,8 @@ public class ExpandbleListViewAdapter extends BaseAdapter {
 		RatingBar bar;
 		TextView title, desc;
 		Button btn_add;
+		ImageView toggleImageView;
+		LinearLayout expandable;
 
 		// ClickChangeImgView iv_collect;
 		ImageView iv_add;

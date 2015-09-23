@@ -275,14 +275,14 @@ public class MainThreeFragment extends ParentFragment {
     }
 
     private void getModule() {
-        DialogUtils.showLoadDialog(mActivity);
+//        DialogUtils.showLoadDialog(mActivity);
         JsonObjectRequest request = new JsonObjectRequest(
                 RequestURL.getPlays(), null, new Listener<JSONObject>() {
 
             @Override
             public void onResponse(JSONObject response) {
                 if (response != null) {
-                    DialogUtils.removeDialog(mActivity);
+//                    DialogUtils.removeDialog(mActivity);
                     String result = response.toString();
                     // 添加缓存
 
@@ -300,7 +300,7 @@ public class MainThreeFragment extends ParentFragment {
 
             @Override
             public void onErrorResponse(VolleyError arg0) {
-                DialogUtils.removeDialog(mActivity);
+//                DialogUtils.removeDialog(mActivity);
                 Toast.makeText(mActivity, R.string.request_error,
                         Toast.LENGTH_SHORT).show();
             }

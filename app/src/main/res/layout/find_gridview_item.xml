@@ -41,7 +41,7 @@
         android:paddingRight="16dp"
         android:paddingTop="6dp"
         android:text="@string/add_text"
-        android:textColor="@color/main_color"
+        android:textColor="?attr/maincolor"
         android:textSize="14sp" />
 
     <View

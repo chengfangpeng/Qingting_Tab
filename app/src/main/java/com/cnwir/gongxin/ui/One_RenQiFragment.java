@@ -29,6 +29,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.format.Time;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -161,7 +162,7 @@ public class One_RenQiFragment extends ParentFragment {
 			int s = array.length();
 			TextView title;
 			View all;
-			PullableListView listview;
+
 			JSONObject obj = null;
 
 			Gson gson = new Gson();
@@ -185,27 +186,27 @@ public class One_RenQiFragment extends ParentFragment {
 
 					}
 				});
-				listview = (PullableListView) module.findViewById(R.id.eListView);
+				PullableListView listview = (PullableListView) module.findViewById(R.id.eListView);
 				JSONArray d = obj.getJSONArray("list");
 				int ss = d.length();
 				for (int j = 0; j < ss; j++) {
 					datas.add(gson.fromJson(d.get(j).toString(), QAppInfo.class));
+
 				}
-				mingZhanAdapter = new ExpandbleListViewAdapter(getActivity(), datas, obj.getString("url"));
-				listview.setAdapter(new SlideExpandableListAdapter(mingZhanAdapter, R.id.expandable_toggle_button,
-						R.id.expandable));
+				mingZhanAdapter = new ExpandbleListViewAdapter(getActivity(), datas, null);
+				listview.setAdapter(mingZhanAdapter);
 				setHeight(listview);
 				ll.addView(module);
 			}
 
-			endTime = System.currentTimeMillis();
-			System.out.println("updateview duration = " + (endTime - startTime));
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
 	}
+
+
 
 	private void setHeight(ListView listView) {
 		Adapter adapter = listView.getAdapter();
@@ -223,6 +224,7 @@ public class One_RenQiFragment extends ParentFragment {
 		ViewGroup.LayoutParams params = listView.getLayoutParams();
 		params.height = totalHeight + (listView.getDividerHeight() * (size - 1));
 		listView.setLayoutParams(params);
+
 	}
 
 	OnRefreshListener refreshListener = new OnRefreshListener() {

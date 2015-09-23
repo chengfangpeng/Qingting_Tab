@@ -48,7 +48,7 @@
                     android:background="@drawable/blue_box"
                     android:text="@string/two_add_text"
                     android:layout_marginTop="6dp"
-                    android:textColor="@color/main_color"
+                    android:textColor="?attr/maincolor"
                     android:textSize="12sp"
                     />
                 

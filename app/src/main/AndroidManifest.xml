@@ -27,7 +27,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/MyAppTheme" >
+        android:theme="@style/Theme_Blue" >
         <activity
             android:name=".ui.loading.LoadingActivity"
             android:label="@string/app_name" >
@@ -97,59 +97,59 @@
         <activity
             android:name=".ui.login.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+             />
         <!-- 搜索 -->
         <activity
             android:name=".ui.search.SearchActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+             />
         <!-- 卡片管理 -->
         <activity
             android:name=".ui.CardManagerActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+             />
         <!-- 收藏 -->
         <activity
             android:name=".ui.collect.CollectActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+          />
 
         <!-- 创建 -->
         <activity
             android:name=".ui.create.CreateUpdateActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+           />
         <!-- 创建列表 -->
         <activity
             android:name=".ui.create.CreateDetailActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+            />
         <!-- 评论 -->
         <activity
             android:name=".ui.comment.CommentActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+             />
         <!-- 反馈 -->
         <activity
             android:name=".ui.feedback.FeedBackActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+             />
 
         <!-- 分类列表 -->
         <activity
             android:name=".ui.CategoryListActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+            />
         <activity
             android:name=".ui.CategroyActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" />
+             />
         <!-- 详情页 -->
 
         <activity
             android:name=".ui.DetailActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            >
             <intent-filter>
                 <action android:name="android.intent.action.CREATE_SHORTCUT" />
             </intent-filter>
@@ -180,7 +180,8 @@
         </activity>
         <activity
             android:name=".ui.clouddesktop.CloudScanningActivity"
-            android:label="CloudScanningActivity" >
+            android:label="CloudScanningActivity"
+            >
         </activity>
         <activity
             android:name=".ui.about.AboutActivity"

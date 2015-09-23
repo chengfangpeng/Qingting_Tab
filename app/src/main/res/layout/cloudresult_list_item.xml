@@ -85,7 +85,7 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:text="@string/add_text"
-                android:textColor="@color/main_color"
+                android:textColor="?attr/maincolor"
                 android:textSize="14sp" />
 
         </LinearLayout>

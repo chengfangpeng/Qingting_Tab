@@ -17,9 +17,11 @@ import com.cnwir.gongxin.R;
 import com.cnwir.gongxin.adapter.TwoCategoryListAdapter;
 import com.cnwir.gongxin.bean.CategoryTwoInfo;
 import com.cnwir.gongxin.bean.ImgInfo;
+import com.cnwir.gongxin.bean.QAppInfo;
 import com.cnwir.gongxin.parentclass.ParentFragment;
 import com.cnwir.gongxin.service.ClientTask;
 import com.cnwir.gongxin.service.RequestURL;
+import com.cnwir.gongxin.util.Constant;
 import com.cnwir.gongxin.view.dialog.DialogUtils;
 import com.google.gson.Gson;
 import com.lidroid.xutils.BitmapUtils;
@@ -259,14 +261,14 @@ public class MainTwoFragment extends ParentFragment {
 
 	private void getModule() {
 
-		DialogUtils.showLoadDialog(mActivity);
+//		DialogUtils.showLoadDialog(mActivity);
 
 		JsonObjectRequest request = new JsonObjectRequest(RequestURL.getCategory(), null, new Listener<JSONObject>() {
 
 			@Override
 			public void onResponse(JSONObject response) {
 				if (response != null) {
-					DialogUtils.removeDialog(mActivity);
+//					DialogUtils.removeDialog(mActivity);
 					String result = response.toString();
 					// 添加缓存
 
@@ -283,7 +285,7 @@ public class MainTwoFragment extends ParentFragment {
 
 			@Override
 			public void onErrorResponse(VolleyError arg0) {
-				DialogUtils.removeDialog(mActivity);
+//				DialogUtils.removeDialog(mActivity);
 				Toast.makeText(mActivity, R.string.request_error, Toast.LENGTH_SHORT).show();
 			}
 		});
@@ -356,14 +358,29 @@ public class MainTwoFragment extends ParentFragment {
 		public Object instantiateItem(ViewGroup container, int position) {
 			position %= imgInfos.size();
 			View view = mInflater.inflate(R.layout.viewpager_item, container, false);
-			ImageView imageView = (ImageView) view.findViewById(R.id.image);
+			final ImageView imageView = (ImageView) view.findViewById(R.id.image);
 			// imageView.setImageResource(mImagesSrc[position]);
 			mBitmapUtils.display(imageView, imgInfos.get(position).getImage());
 
 			final int pos = position;
+			final int finalPosition = position;
+			final int finalPosition1 = position;
+			final int finalPosition2 = position;
 			view.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
+					QAppInfo info = new QAppInfo();
+					info.setTitle(imgInfos.get(finalPosition).getTitle());
+					info.setImage(imgInfos.get(finalPosition).getImage());
+					info.setUrl(imgInfos.get(finalPosition).getUrl());
+					Intent intent = new Intent(mActivity, DetailActivity.class);
+					Bundle bundle = new Bundle();
+					bundle.putSerializable(Constant.QAPPINFO, info);
+					intent.putExtras(bundle);
+
+					mActivity.startActivity(intent);
+
+					((Activity) mActivity).overridePendingTransition(R.anim.slide_left_in, R.anim.slide_left_out);
 				}
 			});
 			container.addView(view);
@@ -400,6 +417,7 @@ public class MainTwoFragment extends ParentFragment {
 		@Override
 		public void onPageScrollStateChanged(int state) {
 		}
+
 	}
 
 }

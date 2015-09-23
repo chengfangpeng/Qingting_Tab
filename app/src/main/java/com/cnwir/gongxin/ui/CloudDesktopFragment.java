@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -48,6 +49,8 @@ import me.drakeet.materialdialog.MaterialDialog;
 
 public class CloudDesktopFragment extends ParentFragment{
 
+	private static final String TAG = CloudDesktopFragment.class.getSimpleName();
+
 	private GridView mGridView;
 
 	private List<QAppInfo> datas;
@@ -68,8 +71,9 @@ public class CloudDesktopFragment extends ParentFragment{
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-
+		Log.d(TAG, "进入fragment");
 		View view = super.onCreateView(inflater, container, savedInstanceState);
+
 		return view;
 	}
 	

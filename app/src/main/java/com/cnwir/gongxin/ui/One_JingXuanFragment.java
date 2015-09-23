@@ -852,9 +852,23 @@ public class One_JingXuanFragment extends Fragment implements OnClickListener {
 			bitmapUtils.display(imageView, imgInfos.get(position).getImage());
 
 			final int pos = position;
+			final int finalPosition = position;
 			view.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
+
+					QAppInfo info = new QAppInfo();
+					info.setTitle(imgInfos.get(finalPosition).getTitle());
+					info.setImage(imgInfos.get(finalPosition).getImage());
+					info.setUrl(imgInfos.get(finalPosition).getUrl());
+					Intent intent = new Intent(mActivity, DetailActivity.class);
+					Bundle bundle = new Bundle();
+					bundle.putSerializable(Constant.QAPPINFO, info);
+					intent.putExtras(bundle);
+
+					mActivity.startActivity(intent);
+
+					((Activity) mActivity).overridePendingTransition(R.anim.slide_left_in, R.anim.slide_left_out);
 				}
 			});
 			container.addView(view);

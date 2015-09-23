@@ -44,7 +44,6 @@ public class CategoryFragment extends ParentFragment {
 	private PullableListView listview;
 	private List<QAppInfo> datas;
 	private AbPullToRefreshView mAbPullToRefreshView = null;
-	// private AbLoadDialogFragment mDialogFragment = null;
 	private ExpandbleListViewAdapter adapter;
 	private String url;
 	private PullToRefreshLayout pull;
@@ -74,9 +73,8 @@ public class CategoryFragment extends ParentFragment {
 		datas = new ArrayList<QAppInfo>();
 
 		adapter = new ExpandbleListViewAdapter(mActivity, datas, null);
-		listview.setAdapter(new SlideExpandableListAdapter(adapter, R.id.expandable_toggle_button, R.id.expandable));
+		listview.setAdapter(adapter);
 		threadTask();
-		System.out.println("gongju time =" + System.currentTimeMillis());
 	}
 	
 	@Override

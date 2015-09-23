@@ -78,7 +78,7 @@ public class One_MingZhanFragment_1 extends ParentFragment {
 	}
 
 	private void getModule() {
-		DialogUtils.showLoadDialog(getActivity());
+//		DialogUtils.showLoadDialog(getActivity());
 		JsonObjectRequest request = new JsonObjectRequest(RequestURL.getMingZhanInfo(), null,
 				new Listener<JSONObject>() {
 
@@ -105,6 +105,7 @@ public class One_MingZhanFragment_1 extends ParentFragment {
 
 						} catch (Exception e) {
 							e.printStackTrace();
+//							DialogUtils.removeDialog(getActivity());
 						}
 
 					}
@@ -113,6 +114,8 @@ public class One_MingZhanFragment_1 extends ParentFragment {
 
 					@Override
 					public void onErrorResponse(VolleyError arg0) {
+//						DialogUtils.removeDialog(getActivity());
+						Toast.makeText(getActivity(), R.string.request_error, Toast.LENGTH_SHORT).show();
 					}
 				});
 
@@ -121,7 +124,7 @@ public class One_MingZhanFragment_1 extends ParentFragment {
 	}
 
 	private void initView(String result) {
-		DialogUtils.removeDialog(getActivity());
+//		DialogUtils.removeDialog(getActivity());
 		try {
 			JSONObject o = new JSONObject(result);
 			JSONArray array = o.getJSONObject("data").getJSONArray("tp");

@@ -30,6 +30,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -88,6 +89,8 @@ public class MainActivity extends SlidingFragmentActivity implements
     private ImageView rightIconImg;
 
     private AbFragmentPagerStateAdapter mAdapter;
+
+    private ImageButton homeDestopBtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -212,7 +215,7 @@ public class MainActivity extends SlidingFragmentActivity implements
         homeTitle = (TextView) findViewById(R.id.home_title);
         mViewPager = (CustomViewPager) findViewById(R.id.viewPager);
         mViewPager.setNoScroll(true);
-        mViewPager.setOffscreenPageLimit(4);
+        mViewPager.setOffscreenPageLimit(5);
         mAdapter = new AbFragmentPagerStateAdapter(
                 getFragmentManager(), listFragments);
         mViewPager.setAdapter(mAdapter);
@@ -225,13 +228,12 @@ public class MainActivity extends SlidingFragmentActivity implements
         rb2 = (RadioButton) findViewById(R.id.home_rb_2);
         rb3 = (RadioButton) findViewById(R.id.home_rb_3);
         rb4 = (RadioButton) findViewById(R.id.home_rb_4);
-        rbCloudDesktop = (RadioButton) findViewById(R.id.home_rb_clouddesktop);
         rb1.setOnCheckedChangeListener(rbListener);
         rb2.setOnCheckedChangeListener(rbListener);
         rb3.setOnCheckedChangeListener(rbListener);
         rb4.setOnCheckedChangeListener(rbListener);
-        rbCloudDesktop.setOnCheckedChangeListener(rbListener);
-
+        homeDestopBtn = (ImageButton) findViewById(R.id.home_clouddesktop_ibtn);
+        homeDestopBtn.setOnClickListener(this);
         rb1.setChecked(true);
 
     }
@@ -267,22 +269,6 @@ public class MainActivity extends SlidingFragmentActivity implements
                     mViewPager.setCurrentItem(3);
                     rightIconImg.setOnClickListener(MainActivity.this);
                     break;
-                case R.id.home_rb_clouddesktop:
-                    mViewPager.setCurrentItem(4);
-
-
-                    rightIconImg.setImageResource(R.drawable.btn_cloud);
-                    rightIconImg.setOnClickListener(new OnClickListener() {
-
-                        @Override
-                        public void onClick(View v) {
-                            Intent intent = new Intent(MainActivity.this,
-                                    CloudScanningActivity.class);
-
-                            startActivity(intent);
-                            overridePendingTransition(R.anim.slide_left_in, R.anim.slide_right_out);
-                        }
-                    });
                 default:
                     break;
             }
@@ -301,6 +287,25 @@ public class MainActivity extends SlidingFragmentActivity implements
                 startActivity(new Intent(this, SearchActivity.class));
                 overridePendingTransition(R.anim.slide_left_in,
                         R.anim.slide_left_out);
+                break;
+            case R.id.home_clouddesktop_ibtn:
+
+
+                mViewPager.setCurrentItem(4);
+
+
+                rightIconImg.setImageResource(R.drawable.btn_cloud);
+                rightIconImg.setOnClickListener(new OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(MainActivity.this,
+                                CloudScanningActivity.class);
+
+                        startActivity(intent);
+                        overridePendingTransition(R.anim.slide_left_in, R.anim.slide_right_out);
+                    }
+                });
                 break;
 
             default:

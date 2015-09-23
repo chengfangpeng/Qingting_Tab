@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.cnwir.gongxin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white_color"
@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/main_color"
+        android:background="?attr/maincolor"
         android:orientation="horizontal" >
 
         <com.cnwir.gongxin.view.CircleImageView
@@ -59,20 +59,30 @@
         android:layout_weight="1" >
     </com.cnwir.gongxin.view.viewpager.CustomViewPager>
 
-    <ImageView
-        android:id="@+id/arc"
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="bottom"
         android:background="@color/transparent"
-        android:src="@drawable/btn_cloud_master_bg" />
+        >
+        <ImageView
+            android:id="@+id/arc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/btn_cloud_master_bg"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+                        />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="58dp"
-        android:background="@color/transparent"
+        android:background="@color/tab_bottom_bg"
         android:orientation="horizontal" 
-        
+        android:layout_below="@id/arc"
         android:layout_gravity="bottom"
         >
 
@@ -105,7 +115,7 @@
             android:textSize="12sp" />
 
         <RadioButton
-            android:id="@+id/home_rb_clouddesktop"
+
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -116,7 +126,9 @@
             android:paddingBottom="2dp"
             android:text="  "
             android:textColor="@color/tab_text_color"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:visibility="invisible"
+            />
 
         <RadioButton
             android:id="@+id/home_rb_3"
@@ -146,5 +158,18 @@
             android:textColor="@color/tab_text_color"
             android:textSize="12sp" />
     </RadioGroup>
+
+        <ImageButton
+            android:id="@+id/home_clouddesktop_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tabbar_clouddesktop"
+            android:background="@color/transparent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
 
 </LinearLayout>
